@@ -28,9 +28,6 @@ int BFS(int i, int j){
             }
             if(maze[nx][ny]==1){
                 maze[nx][ny]=maze[x][y]+1;
-                if(maze[nx][ny]==maze[x][y]){
-                    break;//돌아가면 루프끝냄
-                }
                 q.push({nx,ny});
             }
         }

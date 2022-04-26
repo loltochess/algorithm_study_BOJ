@@ -28,7 +28,7 @@ void dijkstra(int start){
         int current=pq.top().second;
         int distance=-pq.top().first; //0은 모든음수보다크므로 가장먼저나온다.
         pq.pop();
-        if(d[current]<distance){
+        if(d[current]<-distance){
             continue;
         }
         for(int i=0;i<a[current].size();i++){

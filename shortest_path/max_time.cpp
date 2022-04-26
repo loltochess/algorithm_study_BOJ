@@ -41,11 +41,11 @@ int main(){
     int cities=0;
     int time=0;
     for(int i=1;i<=n;i++){
-        if(d[i]>0){
+        if(d[i]>0 && d[i]<INF){
             cities++;
-        }
-        if(d[i]>time){
+            if(d[i]>time){
             time=d[i];
+            }
         }
     }
     cout<<cities<<" "<<time<<endl;
